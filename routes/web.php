@@ -23,6 +23,7 @@ Route::resource('developers','DeveloperController');
 Route::resource('marketers','MarketerController');
 Route::resource('clients','ClientController');
 Route::resource('services','ServiceController');
+Route::resource('discussions','DiscussionController');
 });
 Auth::routes();
 

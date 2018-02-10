@@ -63,6 +63,18 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> Discussion<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{url('/discussions/create')}}">Add Discussion</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('/discussions')}}">Manage Discussion</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
