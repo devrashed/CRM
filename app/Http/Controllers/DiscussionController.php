@@ -55,7 +55,6 @@ class DiscussionController extends Controller
                 'client_id'=>'required',
                 'project_req'=>'required|max:255',
                 'project_prosal'=>'mimes:doc,pdf,docx',
-                'current_date'=>'required',
                 'flow_date'=>'required',
                 'comment'=>'required',
                 'project_status'=>'required',
@@ -69,7 +68,6 @@ $fileName = time().'.'.$request->project_prosal->getClientOriginalExtension();
         $request->project_prosal->move(public_path('proposal_file'), $fileName);
         $discussions->project_prosal=$fileName;
         $discussions->proposal_send=$request->proposal_send;
-        $discussions->current_date=$request->current_date;
         $discussions->flow_date=$request->flow_date;
         $discussions->comment=$request->comment;
         $discussions->project_status=$request->project_status;

@@ -66,17 +66,6 @@
                         </span>
                     @endif
                 </div>
-
-	    		<label for="">Current Date</label>
-                <div class="form-group{{ $errors->has('current_date') ? ' has-error' : '' }}">
-
-                    <input class="form-control" placeholder="" name="current_date" type="date" autofocus>
-                     @if ($errors->has('current_date'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('current_date') }}</strong>
-                        </span>
-                    @endif
-                </div>
                 <label for="">Next Flowup Date</label>
                 <div class="form-group{{ $errors->has('flow_date') ? ' has-error' : '' }}">
 

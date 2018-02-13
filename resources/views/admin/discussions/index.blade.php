@@ -49,8 +49,9 @@
                             @elseif($discussion->proposal_send==2)
                             <td>{{'No'}}</td>
                             @endif 
-                            <td>{{$discussion->current_date}}</td>
-                            <td>{{$discussion->flow_date}}</td>
+                            {{-- <td>{{$discussion->created_at->toFormattedDateString()}}</td> --}}
+                            <td>{{Carbon\Carbon::parse($discussion->created_at)->format('d-m-Y')}}</td>
+                            <td>{{Carbon\Carbon::parse($discussion->flow_date)->format('d-m-Y')}}</td>
                             <td>{{$discussion->comment}}</td>
                             @if($discussion->project_status==1)
                             <td>{{'Upcoming'}}</td>
