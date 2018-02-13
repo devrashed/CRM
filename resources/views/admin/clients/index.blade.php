@@ -25,6 +25,7 @@
                             <th>Phone</th>
                             <th>Marketing Person</th>
                             <th>Company Name</th>
+                            <th>Where Come From</th>
                             <th>Project Name</th>
                             <th>Client Status</th>
                         </tr>
@@ -47,6 +48,7 @@
                             <td>{{($client_info['phone1'])}}</td>
                             <td>{{($mar_info['fullname'])}}</td>  
                             <td>{{$client->company_name}}</td>
+                            <td>{{$client->where_come}}</td>
                             <td>{{$client->project_name}}</td>
                             @if($client->client_status==1)
                             <td>{{'Upcoming'}}</td>

@@ -64,8 +64,9 @@ return view("admin.clients.index",['clients'=> $clients]);
                         ),
                 'email'=>'required|email',
                 'company_name'=>'required',
+                'where_come'=>'required',
                 'business_type'=>'required',
-                'project_name'=>'required',
+                'project_name'=>'required', 
                 'client_status'=>'required',
                 'marketer_id'=>'required',
 
@@ -76,8 +77,9 @@ return view("admin.clients.index",['clients'=> $clients]);
         $client->infos=$client_info;
         $client->email=$request->email;
         $client->company_name=$request->company_name;
+        $client->where_come=$request->where_come;
         $client->business_type=$request->business_type;
-        $client->project_name=$request->project_name;
+        $client->project_name=$request->project_name; 
         $client->client_status=$request->client_status;
         $client->marketer_id=$request->marketer_id;
         $client->status='1';

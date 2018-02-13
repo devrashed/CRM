@@ -83,6 +83,16 @@
                         </span>
                     @endif
                 </div>
+                 <label for="">Where Come From</label>
+                <div class="form-group{{ $errors->has('where_come') ? ' has-error' : '' }}">
+
+                    <input class="form-control" placeholder="Where Come From" name="where_come" type="text" autofocus>
+                     @if ($errors->has('where_come'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('where_come') }}</strong>
+                        </span>
+                    @endif
+                </div>
                 <label for="">Bussiness Type</label>
                 <div class="form-group{{ $errors->has('business_type') ? ' has-error' : '' }}">
 
